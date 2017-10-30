@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{602DA535-0F18-4EAB-AA24-8C7C9666DB5A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3calibration.cpp" />
+    <ClCompile Include="application_trace.cpp" />
+    <ClCompile Include="autofocus.cpp" />
+    <ClCompile Include="bgfg_segm.cpp" />
+    <ClCompile Include="calibration.cpp" />
+    <ClCompile Include="camshiftdemo.cpp" />
+    <ClCompile Include="cloning_demo.cpp" />
+    <ClCompile Include="cloning_gui.cpp" />
+    <ClCompile Include="connected_components.cpp" />
+    <ClCompile Include="contours2.cpp" />
+    <ClCompile Include="convexhull.cpp" />
+    <ClCompile Include="cout_mat.cpp" />
+    <ClCompile Include="create_mask.cpp" />
+    <ClCompile Include="dbt_face_detection.cpp" />
+    <ClCompile Include="delaunay2.cpp" />
+    <ClCompile Include="demhist.cpp" />
+    <ClCompile Include="detect_blob.cpp" />
+    <ClCompile Include="detect_mser.cpp" />
+    <ClCompile Include="dft.cpp" />
+    <ClCompile Include="distrans.cpp" />
+    <ClCompile Include="drawing.cpp" />
+    <ClCompile Include="edge.cpp" />
+    <ClCompile Include="em.cpp" />
+    <ClCompile Include="example_cmake\example.cpp" />
+    <ClCompile Include="facedetect.cpp" />
+    <ClCompile Include="facial_features.cpp" />
+    <ClCompile Include="falsecolor.cpp" />
+    <ClCompile Include="fback.cpp" />
+    <ClCompile Include="ffilldemo.cpp" />
+    <ClCompile Include="filestorage.cpp" />
+    <ClCompile Include="filestorage_base64.cpp" />
+    <ClCompile Include="fitellipse.cpp" />
+    <ClCompile Include="grabcut.cpp" />
+    <ClCompile Include="houghcircles.cpp" />
+    <ClCompile Include="houghlines.cpp" />
+    <ClCompile Include="image.cpp" />
+    <ClCompile Include="imagelist_creator.cpp" />
+    <ClCompile Include="image_alignment.cpp" />
+    <ClCompile Include="image_sequence.cpp" />
+    <ClCompile Include="inpaint.cpp" />
+    <ClCompile Include="intelperc_capture.cpp" />
+    <ClCompile Include="kalman.cpp" />
+    <ClCompile Include="kmeans.cpp" />
+    <ClCompile Include="laplace.cpp" />
+    <ClCompile Include="letter_recog.cpp" />
+    <ClCompile Include="lkdemo.cpp" />
+    <ClCompile Include="logistic_regression.cpp" />
+    <ClCompile Include="lsd_lines.cpp" />
+    <ClCompile Include="mask_tmpl.cpp" />
+    <ClCompile Include="matchmethod_orb_akaze_brisk.cpp" />
+    <ClCompile Include="minarea.cpp" />
+    <ClCompile Include="morphology2.cpp" />
+    <ClCompile Include="neural_network.cpp" />
+    <ClCompile Include="npr_demo.cpp" />
+    <ClCompile Include="opencv_version.cpp" />
+    <ClCompile Include="openni_capture.cpp" />
+    <ClCompile Include="pca.cpp" />
+    <ClCompile Include="peopledetect.cpp" />
+    <ClCompile Include="phase_corr.cpp" />
+    <ClCompile Include="points_classifier.cpp" />
+    <ClCompile Include="polar_transforms.cpp" />
+    <ClCompile Include="segment_objects.cpp" />
+    <ClCompile Include="select3dobj.cpp" />
+    <ClCompile Include="shape_example.cpp" />
+    <ClCompile Include="smiledetect.cpp" />
+    <ClCompile Include="squares.cpp" />
+    <ClCompile Include="starter_imagelist.cpp" />
+    <ClCompile Include="stereo_calib.cpp" />
+    <ClCompile Include="stereo_match.cpp" />
+    <ClCompile Include="stitching.cpp" />
+    <ClCompile Include="stitching_detailed.cpp" />
+    <ClCompile Include="train_HOG.cpp" />
+    <ClCompile Include="train_svmsgd.cpp" />
+    <ClCompile Include="tree_engine.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\camera_calibration\camera_calibration.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\CsvReader.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\CsvWriter.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\main_detection.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\main_registration.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\Mesh.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\Model.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\ModelRegistration.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\PnPProblem.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\RobustMatcher.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\real_time_pose_estimation\src\Utils.cpp" />
+    <ClCompile Include="tutorial_code\calib3d\stereobm\SBM_Sample.cpp" />
+    <ClCompile Include="tutorial_code\core\addingimages\AddingImages.cpp" />
+    <ClCompile Include="tutorial_code\core\discrete_fourier_transform\discrete_fourier_transform.cpp" />
+    <ClCompile Include="tutorial_code\core\file_input_output\file_input_output.cpp" />
+    <ClCompile Include="tutorial_code\core\how_to_scan_images\how_to_scan_images.cpp" />
+    <ClCompile Include="tutorial_code\core\how_to_use_opencv_parallel_for_\how_to_use_OpenCV_parallel_for_.cpp" />
+    <ClCompile Include="tutorial_code\core\interoperability_with_opencv_1\interoperability_with_OpenCV_1.cpp" />
+    <ClCompile Include="tutorial_code\core\ippasync\ippasync_sample.cpp" />
+    <ClCompile Include="tutorial_code\core\matrix\Drawing_1.cpp" />
+    <ClCompile Include="tutorial_code\core\matrix\Drawing_2.cpp" />
+    <ClCompile Include="tutorial_code\core\mat_mask_operations\mat_mask_operations.cpp" />
+    <ClCompile Include="tutorial_code\core\mat_the_basic_image_container\mat_the_basic_image_container.cpp" />
+    <ClCompile Include="tutorial_code\features2d\AKAZE_match.cpp" />
+    <ClCompile Include="tutorial_code\features2d\akaze_tracking\planar_tracking.cpp" />
+    <ClCompile Include="tutorial_code\gpu\gpu-basics-similarity\gpu-basics-similarity.cpp" />
+    <ClCompile Include="tutorial_code\highgui\AddingImagesTrackbar.cpp" />
+    <ClCompile Include="tutorial_code\highgui\BasicLinearTransformsTrackbar.cpp" />
+    <ClCompile Include="tutorial_code\histograms_matching\calcBackProject_Demo1.cpp" />
+    <ClCompile Include="tutorial_code\histograms_matching\calcBackProject_Demo2.cpp" />
+    <ClCompile Include="tutorial_code\histograms_matching\calcHist_Demo.cpp" />
+    <ClCompile Include="tutorial_code\histograms_matching\compareHist_Demo.cpp" />
+    <ClCompile Include="tutorial_code\histograms_matching\EqualizeHist_Demo.cpp" />
+    <ClCompile Include="tutorial_code\histograms_matching\MatchTemplate_Demo.cpp" />
+    <ClCompile Include="tutorial_code\imgcodecs\gdal_io\gdal-image.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\BasicLinearTransforms.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\changing_contrast_brightness_image\changing_contrast_brightness_image.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\HitMiss.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\Morphology_1.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\Morphology_2.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\Morphology_3.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\Pyramids.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\Smoothing.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\Threshold.cpp" />
+    <ClCompile Include="tutorial_code\imgproc\Threshold_inRange.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\CannyDetector_Demo.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\copyMakeBorder_demo.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\filter2D_demo.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\Geometric_Transforms_Demo.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\HoughCircle_Demo.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\HoughLines_Demo.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\imageSegmentation.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\Laplace_Demo.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\Remap_Demo.cpp" />
+    <ClCompile Include="tutorial_code\imgtrans\Sobel_Demo.cpp" />
+    <ClCompile Include="tutorial_code\introduction\display_image\display_image.cpp" />
+    <ClCompile Include="tutorial_code\introduction\documentation\documentation.cpp" />
+    <ClCompile Include="tutorial_code\introduction\windows_visual_studio_opencv\introduction_windows_vs.cpp" />
+    <ClCompile Include="tutorial_code\ml\introduction_to_pca\introduction_to_pca.cpp" />
+    <ClCompile Include="tutorial_code\ml\introduction_to_svm\introduction_to_svm.cpp" />
+    <ClCompile Include="tutorial_code\ml\non_linear_svms\non_linear_svms.cpp" />
+    <ClCompile Include="tutorial_code\objectdetection\objectDetection.cpp" />
+    <ClCompile Include="tutorial_code\photo\decolorization\decolor.cpp" />
+    <ClCompile Include="tutorial_code\photo\hdr_imaging\hdr_imaging.cpp" />
+    <ClCompile Include="tutorial_code\photo\non_photorealistic_rendering\npr_demo.cpp" />
+    <ClCompile Include="tutorial_code\photo\seamless_cloning\cloning_demo.cpp" />
+    <ClCompile Include="tutorial_code\photo\seamless_cloning\cloning_gui.cpp" />
+    <ClCompile Include="tutorial_code\shapedescriptors\findContours_demo.cpp" />
+    <ClCompile Include="tutorial_code\shapedescriptors\generalContours_demo1.cpp" />
+    <ClCompile Include="tutorial_code\shapedescriptors\generalContours_demo2.cpp" />
+    <ClCompile Include="tutorial_code\shapedescriptors\hull_demo.cpp" />
+    <ClCompile Include="tutorial_code\shapedescriptors\moments_demo.cpp" />
+    <ClCompile Include="tutorial_code\shapedescriptors\pointPolygonTest_demo.cpp" />
+    <ClCompile Include="tutorial_code\trackingmotion\cornerDetector_Demo.cpp" />
+    <ClCompile Include="tutorial_code\trackingmotion\cornerHarris_Demo.cpp" />
+    <ClCompile Include="tutorial_code\trackingmotion\cornerSubPix_Demo.cpp" />
+    <ClCompile Include="tutorial_code\trackingmotion\goodFeaturesToTrack_Demo.cpp" />
+    <ClCompile Include="tutorial_code\videoio\video-input-psnr-ssim\video-input-psnr-ssim.cpp" />
+    <ClCompile Include="tutorial_code\videoio\video-write\video-write.cpp" />
+    <ClCompile Include="tutorial_code\video\bg_sub.cpp" />
+    <ClCompile Include="tutorial_code\viz\creating_widgets.cpp" />
+    <ClCompile Include="tutorial_code\viz\launching_viz.cpp" />
+    <ClCompile Include="tutorial_code\viz\transformations.cpp" />
+    <ClCompile Include="tutorial_code\viz\widget_pose.cpp" />
+    <ClCompile Include="tutorial_code\xfeatures2d\LATCH_match.cpp" />
+    <ClCompile Include="tvl1_optical_flow.cpp" />
+    <ClCompile Include="videocapture_basic.cpp" />
+    <ClCompile Include="videocapture_starter.cpp" />
+    <ClCompile Include="videostab.cpp" />
+    <ClCompile Include="videowriter_basic.cpp" />
+    <ClCompile Include="watershed.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tutorial_code\calib3d\real_time_pose_estimation\src\CsvReader.h" />
+    <ClInclude Include="tutorial_code\calib3d\real_time_pose_estimation\src\CsvWriter.h" />
+    <ClInclude Include="tutorial_code\calib3d\real_time_pose_estimation\src\Mesh.h" />
+    <ClInclude Include="tutorial_code\calib3d\real_time_pose_estimation\src\Model.h" />
+    <ClInclude Include="tutorial_code\calib3d\real_time_pose_estimation\src\ModelRegistration.h" />
+    <ClInclude Include="tutorial_code\calib3d\real_time_pose_estimation\src\PnPProblem.h" />
+    <ClInclude Include="tutorial_code\calib3d\real_time_pose_estimation\src\RobustMatcher.h" />
+    <ClInclude Include="tutorial_code\calib3d\real_time_pose_estimation\src\Utils.h" />
+    <ClInclude Include="tutorial_code\features2d\akaze_tracking\stats.h" />
+    <ClInclude Include="tutorial_code\features2d\akaze_tracking\utils.h" />
+    <ClInclude Include="tutorial_code\gpu\gpu-thrust-interop\Thrust_interop.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

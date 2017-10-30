@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/opencv/sources/samples/opencl/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindOpenCL.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeConfigurableFile.in
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeConfigurableFile.in
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
